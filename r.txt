@@ -20,15 +20,7 @@ https://www.iconsdb.com/royal-blue-icons/dice-icon.html
 
 https://perchance.org/ai-icon-generator
 
------------------------------------------------
-ldd a.exe | grep -E '/mingw64' | awk '{print $3}'
-
-mkdir -p deploy/bin
-cp my_app.exe deploy/bin/
-ldd a.exe | grep -E '/mingw64|/ucrt64' | awk '{print $3}' | xargs -I {} cp {} deploy/bin/
-
-
 clang++ gtk.cpp app.res $(pkg-config --cflags --libs gtkmm-4.0) -std=c++23 -mwindows -o app.exe
 
-
-ldd words.exe | grep -E '/words' | awk '{print $1}' | xargs -I {} cp {} d/
+------- blocks.js  -------
+first version of blocks game before c++ version, so it's cutted
